@@ -27,5 +27,6 @@ end
 describe 'not a number' do
   it "returns 'ERROR NOT A NUMBER' when anything but an integer is given" do
       expect(fizzbuzz("60")).to eq 'ERROR NOT A NUMBER'
+      expect(fizzbuzz([])).to eq 'ERROR NOT A NUMBER'
   end
 end
