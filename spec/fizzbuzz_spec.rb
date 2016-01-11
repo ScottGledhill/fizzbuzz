@@ -1,4 +1,4 @@
-require 'fizzbuzz'
+require "fizzbuzz"
 
 describe 'returns number' do
    it "returns the argument 'number' when neither fizz, buzz or fizzbuzz is applicable" do
@@ -21,5 +21,11 @@ end
 describe 'fizzbuzz' do
   it "returns 'fizzbuzz' when multiplier of 5 and 3 is passed" do
     expect(fizzbuzz(60)).to eq 'fizzbuzz'
+  end
+end
+
+describe 'not a number' do
+  it "returns 'ERROR NOT A NUMBER' when anything but an integer is given" do
+      expect(fizzbuzz("60")).to eq 'ERROR NOT A NUMBER'
   end
 end

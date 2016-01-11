@@ -1,10 +1,12 @@
 
-def fizzbuzz (number)
-  if number % 3 != 0 && number % 5 != 0
+def fizzbuzz(number)
+  if number.class != Fixnum
+    return 'ERROR NOT A NUMBER'
+  elsif number % 3 != 0 && number % 5 != 0
     return number
   elsif number % 3 == 0 && number % 5 == 0
-  return 'fizzbuzz'
+    return 'fizzbuzz'
   else
-    number % 3 == 0 ? 'fizz' : 'buzz'
+      number % 3 == 0 ? 'fizz' : 'buzz'
   end
 end
