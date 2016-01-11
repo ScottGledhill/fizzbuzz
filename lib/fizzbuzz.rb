@@ -1,3 +1,3 @@
 def fizzbuzz (number)
-number
+number % 3 == 0 ? 'fizz' : number
 end
